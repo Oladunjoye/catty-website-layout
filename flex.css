@@ -32,13 +32,19 @@ aside i.fa {
  display: flex;
  flex: 1 1  auto; /*this makes sure the section grows to fill the entire available space and shrinks too*/ 
  flex-direction: column;
+ 
 }
 
 .music-head{
     flex: 0 0 280px;
     display: flex;
      padding: 40px; 
-     background-color: #4e4e4e; 
+     background-color: #c4c3c3; 
+}
+.music-list{
+    flex: 1 0 auto;
+    list-style: none;
+    padding:  5px 10px 0px;
 }
 
 footer{
@@ -47,3 +53,15 @@ footer{
     color: #fff; 
      background-color: rgba(61, 100, 158, .9); 
 }
+img {
+height: 450px;
+width: 450px;
+}
+
+li { 
+     display: flex; /*Paragraphs are now displayed on one line*/ 
+     padding: 0 20px; /*Some breathing space*/ 
+    min-height: 50px; }
+
+    li p { 
+         flex: 0 0 25%; /*This is the sweet sauce*/ }
